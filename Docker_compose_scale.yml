@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    image: myadd:latest
+    ports:
+      - "80:80"
+
+  deploy:
+    replicas: 3
+      limits:
+      cpus: '0.5'
+      memory: 50M
